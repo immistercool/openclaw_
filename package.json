@@ -1,0 +1,42 @@
+{
+  "name": "openclaw-bot",
+  "version": "1.0.0",
+  "description": "J.A.R.V.I.S-inspired AI Assistant System with Multi-Agent Architecture",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down",
+    "docker:logs": "docker-compose logs -f"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.5",
+    "prettier": "^3.2.4",
+    "turbo": "^1.12.4",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
+  },
+  "keywords": [
+    "ai",
+    "assistant",
+    "jarvis",
+    "multi-agent",
+    "telegram",
+    "voice",
+    "tts",
+    "stt"
+  ],
+  "author": "OpenClaw Team",
+  "license": "MIT"
+}
